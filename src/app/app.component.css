@@ -1,0 +1,96 @@
+img {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;  
+    width: 100%;
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    filter: brightness(25%);
+}
+
+h1 {
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkorchid;
+    color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+    font-size: 60px;
+}
+
+div, button {
+    position: relative;
+}
+
+div {
+    padding: 30px;
+    color: white;
+    font-size: 50px;
+}
+
+span {
+    margin-left: 36%;
+}
+
+input {
+    font-size: 40px;
+    width: 13%;
+    margin-right: 39%;
+    float: right;
+    border-style: ridge;
+    border-radius: 8px;
+    border-width: .15em;
+    outline: none;
+    border-color: darkgoldenrod;
+    cursor: pointer;
+}
+
+input:focus {
+    border-width: .27em;
+    border-color: #00dd22;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    margin-top: 45px;
+    margin-left: 39%;
+    position: relative;
+    padding: 15px 110px;
+    background-color: darkorange;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: orange;
+    box-shadow: 0 0 10px orange, 0 0 30px orange, 0 0 70px orange;
+    transition-delay: .01s;
+    /* text-decoration: none !important; */
+    border-radius: 8px;
+    /* border: none; */
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background: green;
+    box-shadow: 0 0 10px green, 0 0 30px green, 0 0  70px green;
+    transition-delay: .01s;
+}
