@@ -21,11 +21,8 @@ h1 {
     font-size: 60px;
 }
 
-div, button {
-    position: relative;
-}
-
 div {
+    position: relative;
     padding: 30px;
     color: white;
     font-size: 50px;
@@ -74,15 +71,14 @@ button {
     font-size: 24px;
     overflow: hidden;
     transition: 0.2s;
+    margin-bottom: 50px;
 }
 
 button:hover {
     background: orange;
     box-shadow: 0 0 10px orange, 0 0 30px orange, 0 0 70px orange;
     transition-delay: .01s;
-    /* text-decoration: none !important; */
     border-radius: 8px;
-    /* border: none; */
 }
 
 button:focus {
