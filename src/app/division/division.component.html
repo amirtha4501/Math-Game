@@ -1,0 +1,11 @@
+<img src="../assets/images/chess.jpg" alt="chess">
+
+<h1 id="title">Math Game</h1>
+
+<div *ngFor="let qtn of qtns; index as i">
+    <span>
+        {{ qtn.num1 }} % {{ qtn.num2 }}
+    </span>
+    <input type="number" [(ngModel)]="qtns[i].answer" required>
+</div>
+<button (click)="submitIt()">submit</button>

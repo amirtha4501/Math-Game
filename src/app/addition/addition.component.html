@@ -1,0 +1,7 @@
+<div *ngFor="let qtn of qtns; index as i">
+    <span>
+      {{qtn.num1}} + {{qtn.num2}}
+    </span>
+    <input type="number" [(ngModel)]="qtns[i].answer" required>
+  </div>
+  <button (click)="submitIt()" >Submit</button>

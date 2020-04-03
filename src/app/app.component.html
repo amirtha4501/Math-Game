@@ -1,11 +1,25 @@
-<img src="../assets/images/chess.jpg" alt="chess">
+<!-- <img src="../assets/images/chess.jpg" alt="chess"> -->
 
 <h1 id="title">My Math Game</h1>
-  
-  <div *ngFor="let qtn of qtns; index as i">
-    <span>
-      {{qtn.num1}} {{qtn.op}} {{qtn.num2}}
-    </span>
-    <input type="number" [(ngModel)]="qtns[i].answer" required>
-  </div>
-  <button (click)="submitIt()" >Submit</button>
+
+<a routerLink="/addition">
+    Addition
+</a>
+
+<a routerLink="/subtraction">
+    Subtraction
+</a>
+
+<a routerLink="/multiplication">
+    Multiplication
+</a>
+
+<a routerLink="/division">
+    Division
+</a>
+
+<a routerLink="/randomoperation">
+    Random basic operations
+</a>
+
+<router-outlet></router-outlet>
