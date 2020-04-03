@@ -6,9 +6,11 @@ import { SubtractionComponent } from '../app/subtraction/subtraction.component';
 import { MultiplicationComponent } from '../app/multiplication/multiplication.component';
 import { DivisionComponent } from '../app/division/division.component';
 import { RandomOperationComponent } from '../app/random-operation/random-operation.component';
+import { DashboardComponent } from '../app/dashboard/dashboard.component'
 
 const routes: Routes = [
-  { path: '', redirectTo: '/addition', pathMatch: 'full'},
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'addition', component: AdditionComponent },
   { path: 'subtraction', component: SubtractionComponent },
   { path: 'multiplication', component: MultiplicationComponent },

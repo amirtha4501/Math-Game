@@ -11,6 +11,7 @@ import { SubtractionComponent } from './subtraction/subtraction.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { DivisionComponent } from './division/division.component';
 import { RandomOperationComponent } from './random-operation/random-operation.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RandomOperationComponent } from './random-operation/random-operation.co
     SubtractionComponent,
     MultiplicationComponent,
     DivisionComponent,
-    RandomOperationComponent
+    RandomOperationComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
