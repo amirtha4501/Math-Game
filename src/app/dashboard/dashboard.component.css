@@ -1,0 +1,22 @@
+img {
+    height: 300px;
+}
+
+.card {
+    padding-left: 0;
+    padding-right: 0;
+    border-color: lightgray;
+}
+
+.card-body {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

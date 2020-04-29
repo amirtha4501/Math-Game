@@ -90,3 +90,17 @@ button:active {
     box-shadow: 0 0 10px green, 0 0 30px green, 0 0  70px green;
     transition-delay: .01s;
 } */
+.navbar-header a {
+    color: white;
+    margin-left: 1.5em;
+}
+nav li a {
+    font-size: 25px;
+    color: white
+}
+
+nav li:hover {
+    background-color: darkorange;
+    border-radius: 5px;
+}
+
