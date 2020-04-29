@@ -1,0 +1,19 @@
+input {
+    font-size: 20px;
+    border-style: ridge;
+    border-width: .1em;
+    outline: none;
+    border-color: darkgoldenrod;
+    cursor: pointer;
+}
+
+input:focus {
+    border-width: .2em;
+    border-color: #00dd22;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
