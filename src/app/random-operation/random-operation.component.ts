@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RandomOperationComponent implements OnInit {
   public qtns = [];
-  operators = ['+','-','*','/'];
+  operators = ['+','-','x','/'];
 
   ngOnInit() {
     for(let i = 0; i < 10; i++) {
