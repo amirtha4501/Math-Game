@@ -1,7 +1,18 @@
-<div *ngFor="let qtn of qtns; index as i">
-    <span>
-      {{qtn.num1}} + {{qtn.num2}}
-    </span>
-    <input type="number" [(ngModel)]="qtns[i].answer" required>
+<form class="form">
+  <div class="container">
+    <div *ngFor="let qtn of qtns; index as i">    
+        <div class="form-row">
+          <label class="col">
+            <div class="offset-md-8"><br><br>
+              <h1 class=""><strong>{{qtn.num1}} + {{qtn.num2}}</strong></h1>
+            </div>
+          </label>
+          <div class="col"><br><br>
+            <input class="form-control col-sm-3 offset-md-1 form-control-lg" type="number" [(ngModel)]="qtns[i].answer" name="user_ans" required>
+          </div>
+        </div>      
+    </div>
+    <br><hr><br>
+    <button (click)="submitIt()" class="btn btn-primary btn-lg w-50 offset-md-3" >Submit</button><br><br><br><br>
   </div>
-  <button (click)="submitIt()" >Submit</button>
+</form>
