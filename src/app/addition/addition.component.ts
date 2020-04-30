@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AdditionComponent implements OnInit {
 
   public qtns = [];
+  public score = 0;
 
   constructor() { }
 
@@ -23,7 +24,6 @@ export class AdditionComponent implements OnInit {
   }
 
   submitIt() {      
-    let score = 0;
 
     for(let i=0; i<10; i++){
       let num1 = this.qtns[i].num1;
@@ -33,10 +33,10 @@ export class AdditionComponent implements OnInit {
       let correctAnswer = num1 + num2;
     
       if (correctAnswer == answer){
-        score++;
+        this.score++;
       }
     }
-    alert("Your score is " + score);
+    // alert("Your score is " + this.score);
   }
 
 
