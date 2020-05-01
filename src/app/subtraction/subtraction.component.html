@@ -13,6 +13,40 @@
       </div>
     </div>
     <br><hr><br>
-    <button (click)="submitIt()" class="btn btn-primary btn-lg w-50 offset-md-3" >Submit</button><br><br><br><br>
+    <button data-target="#res-modal" data-toggle="modal" (click)="submitIt()" class="btn btn-primary btn-lg w-50 offset-md-3" >Submit</button><br><br><br><br>
   </div>
+
+  <div class="modal fade" id="res-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div *ngIf="10 == score"><div class="modal-title"><h2>Well done!</h2></div></div>
+          <div *ngIf="10 > score && score > 0"><div class="modal-title"><h2>Good work!</h2></div></div>
+          <div *ngIf="0 == score"><div class="modal-title"><h2>Oops! You lost...</h2></div></div>
+        </div>
+        
+        <div class="modal-body">
+          <div class="text-center" *ngIf="10 == score">
+            <img src="assets/images/s_1.jpg" alt="">
+            <h4>Your score is {{score}}</h4>
+          </div>
+          <div class="text-center" *ngIf="10 > score && score > 0">
+            <img src="assets/images/s_2.jpeg" alt="">
+            <h4>Your score is {{score}}</h4>
+          </div>
+          <div class="text-center" *ngIf="0 == score">
+            <img src="assets/images/s_3.png" alt="">
+            <h4>Your score is {{score}}</h4>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <a class="btn btn-success btn-lg" onclick="location.reload()" data-dismiss="modal">Play again</a>
+          <a class="btn btn-danger btn-lg" href="/dashboard">Quit</a>
+        </div>       
+      </div>
+    </div>      
+  </div>
+
 </form>

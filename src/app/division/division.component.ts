@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DivisionComponent implements OnInit {
 
-  qtns = [];
+  public qtns = [];
+  public score = 0;
 
   constructor() { }
 
@@ -24,19 +25,17 @@ export class DivisionComponent implements OnInit {
 
   submitIt() {
 
-    let score = 0;
     for (let i = 0; i < 10; i++) {
       let num1 = this.qtns[i].num1;
       let num2 = this.qtns[i].num2;
       let answer = this.qtns[i].answer;
 
-      let correctAnswer = num1 % num2;
+      let correctAnswer = num1 / num2;
 
       if ( answer == correctAnswer ) {
-        score++;
+        this.score++;
       }
     }
-    alert('Your score is ' + score);
   }
 
 }

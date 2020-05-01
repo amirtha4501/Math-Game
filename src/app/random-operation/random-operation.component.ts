@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RandomOperationComponent implements OnInit {
   public qtns = [];
   operators = ['+','-','x','/'];
+  public score = 0;
 
   ngOnInit() {
     for(let i = 0; i < 10; i++) {
@@ -22,7 +23,6 @@ export class RandomOperationComponent implements OnInit {
   }
     
   submitIt() {      
-    let score = 0;
 
     for (let i = 0; i < 10; i++){
       let num1 = this.qtns[i].num1;
@@ -30,17 +30,16 @@ export class RandomOperationComponent implements OnInit {
       let op = this.qtns[i].op;
       let answer = this.qtns[i].answer;
       let OPMAP = {
-        '*': (num1, num2) => num1 * num2,
+        'x': (num1, num2) => num1 * num2,
         '/': (num1, num2) => num1 / num2,
         '+': (num1, num2) => num1 + num2,
         '-': (num1, num2) => num1 - num2
       }
       let correctAnswer = OPMAP[op](num1,num2);
       if (answer == correctAnswer){
-        score++;
+        this.score++;
       }
     }
-    alert("Your score is " + score);
   }
 
 }

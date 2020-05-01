@@ -27,11 +27,11 @@
         </div>
         
         <div class="modal-body">
-          <div *ngIf="10 == score">
+          <div class="text-center" *ngIf="10 == score">
             <img src="assets/images/a_1.jpg" alt="">
             <h4>Your score is {{score}}</h4>
           </div>
-          <div *ngIf="10 > score && score > 0">
+          <div class="text-center" *ngIf="10 > score && score > 0">
             <img src="assets/images/a_2.jpg" alt="">
             <h4>Your score is {{score}}</h4>
           </div>
@@ -42,11 +42,11 @@
         </div>
         
         <div class="modal-footer">
-          <button class="btn btn-success">Play again</button>
-          <button class="btn btn-danger">Quit</button>
-        </div>
-        
+          <a class="btn btn-success btn-lg" onclick="location.reload()" data-dismiss="modal">Play again</a>
+          <a class="btn btn-danger btn-lg" href="/dashboard">Quit</a>
+        </div>       
       </div>
     </div>      
   </div>
+
 </form>

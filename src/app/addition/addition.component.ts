@@ -36,7 +36,6 @@ export class AdditionComponent implements OnInit {
         this.score++;
       }
     }
-    // alert("Your score is " + this.score);
   }
 
 

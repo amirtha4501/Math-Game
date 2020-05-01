@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubtractionComponent implements OnInit {
 
-  qtns = [];
+  public qtns = [];
+  public score = 0;
 
   constructor() { }
 
@@ -23,7 +24,6 @@ export class SubtractionComponent implements OnInit {
   }
 
   submitIt() {
-    let score = 0;
 
     for (let i = 0; i < 10; i++) {
       let num1 = this.qtns[i].num1;
@@ -33,10 +33,9 @@ export class SubtractionComponent implements OnInit {
       let correctAnswer = num1 - num2;
 
       if (answer == correctAnswer) {
-        score++;
+        this.score++;
       }
     }
-    alert("Your score is " + score);
   }
 
 }
