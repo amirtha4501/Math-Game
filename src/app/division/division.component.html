@@ -4,7 +4,7 @@
             <div class="form-row">
                 <label class="col">
                     <div class="offset-md-8"><br><br>
-                        <h1 class=""><strong>{{qtn.num1}} / {{qtn.num2}}</strong></h1>
+                        <h1 class="text-nowrap"><strong>{{qtn.num1}} / {{qtn.num2}}</strong></h1>
                     </div>
                 </label>
                 <div class="col"><br><br>
@@ -28,15 +28,15 @@
             
             <div class="modal-body">
               <div class="text-center" *ngIf="10 == score">
-                <img src="assets/images/d_1.jpg" alt="">
+                <img src="assets/images/d_1.jpg" class="img-fluid" alt="">
                 <h4>Your score is {{score}}</h4>
               </div>
               <div class="text-center" *ngIf="10 > score && score > 0">
-                <img src="assets/images/d_2.jpg" alt="">
+                <img src="assets/images/d_2.jpg" class="img-fluid" alt="">
                 <h4>Your score is {{score}}</h4>
               </div>
               <div class="text-center" *ngIf="0 == score">
-                <img src="assets/images/d_3.jpg" alt="">
+                <img src="assets/images/d_3.jpg" class="img-fluid" alt="">
                 <h4>Your score is {{score}}</h4>
               </div>
             </div>
