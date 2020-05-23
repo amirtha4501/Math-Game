@@ -1,6 +1,7 @@
 # MathGame
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Link address for the Project is https://amirtha4501.github.io/MathMaster/
 
 ## Development server
 
